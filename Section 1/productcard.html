@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .myimg{
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+        header{
+            height: 50vh;
+            background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.482),rgba(0, 0, 0, 0.532)),
+            url(https://cdn.pixabay.com/photo/2015/11/07/08/49/hand-1030563_1280.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .title{
+            transform: perspective(500px) ;
+            
+        }
+        .card{
+            transform-style: preserve-3d;
+            transform: perspective(1000px)
+
+           
+
+        }
+        .card-body{
+            transform: translateZ(30px);
+            
+        }
+       
+
+    </style>
+   
+</head>
+<body class="bg-primary">
+    <header class="bg-dark text-white d-flex ">
+        <div class="container py-5 my-auto">
+            <h1 class="text-center display-1 fw-bold title ">Black Friday Sale </h1>
+            <p class="fs-4 text-center sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque modi earum sed dolores hic provident</p>
+            <div class="input-group search">
+                <div class="input-group-text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input type="text" class="form-control">
+
+                <button class="btn btn-warning">Search</button>
+
+            </div>
+           
+        </div>
+    </header>
+    <section>
+
+        <div class="container my-4 ">
+        <div class="row">
+           <div class="col-md-4">
+        
+        <div class="card mb-4">
+            <img class="myimg card-img-top" src="data:image/jpeg;base64,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" alt="">
+
+            <div class="card-body">
+                <p class="fw-bold text-muted">Lens</p>
+                <h4>Instax Camra Lens</h4>
+                <p class="text-black-50 m-0">Blue</p>
+
+                <p><i class="fa-solid fa-star text-warning"></i> 4.3 Star from 8663 Reviews</p>
+                <h3> Rs 2000</h3>
+                <button class="mt-3 btn btn-danger float-end "><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+            </div>
+
+        </div>
+
+    </div>
+           <div class="col-md-4">
+        
+        <div class="card">
+            <img class=" myimg card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwU2j6KJvCXMM604rlylV8mdPUguWVRJ2-Uw&usqp=CAU" alt="">
+
+            <div class="card-body">
+                <p class="fw-bold text-muted">Lens</p>
+                <h4>Instax Lens</h4>
+                <p class="text-black-50 m-0">Blue</p>
+
+                <p><i class="fa-solid fa-star text-warning"></i> 4.3 Star from 8663 Reviews</p>
+                <h3>Rs 15000</h3>
+                <button class="mt-3 btn btn-danger float-end "><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+            </div>
+
+        </div>
+
+    </div>
+           <div class="col-md-4">
+        
+        <div class="card">
+            <img class=" myimg card-img-top" src="https://www.lifewire.com/thmb/I_LROp1ZWToPQLt5Xu-271GgJ8I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-641170116-5add544eae9ab80038853f7a.jpg" alt="">
+
+            <div class="card-body">
+                <p class="fw-bold text-muted">Lens</p>
+                <h4>Instax Lens </h4>
+                <p class="text-black-50 m-0">Blue</p>
+
+                <p><i class="fa-solid fa-star text-warning"></i> 4.3 Star from 8663 Reviews</p>
+                <h3>Rs 3000</h3>
+                <button class="mt-3 btn btn-danger float-end "><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+            </div>
+
+        </div>
+
+     </div>
+        <div class="col-md-4">
+        
+        <div class="card">
+            <img class=" myimg card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ40bT5-3iTSXGmzYoqX7hKpMAqhAMtZOkXlQ&usqp=CAU" alt="">
+
+            <div class="card-body">
+                <p class="fw-bold text-muted">Lens</p>
+                <h4>Instax Lens </h4>
+                <p class="text-black-50 m-0">Blue</p>
+
+                <p><i class="fa-solid fa-star text-warning"></i> 4.3 Star from 8663 Reviews</p>
+                <h3>Rs 4000</h3>
+                <button class="mt-3 btn btn-danger float-end "><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+            </div>
+
+        </div>
+
+        </div>
+        <div class="col-md-4">
+        
+        <div class="card">
+            <img class=" myimg card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwU2j6KJvCXMM604rlylV8mdPUguWVRJ2-Uw&usqp=CAU" alt="">
+
+            <div class="card-body">
+                <p class="fw-bold text-muted">Lens</p>
+                <h4>Instax Lens </h4>
+                <p class="text-black-50 m-0">Blue</p>
+
+                <p><i class="fa-solid fa-star text-warning"></i> 4.3 Star from 8663 Reviews</p>
+                <h3>Rs 5000</h3>
+                <button class="mt-3 btn btn-danger float-end "><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+            </div>
+
+        </div>
+
+     </div> 
+        <div class="col-md-4">
+        
+        <div class="card">
+            <img class=" myimg card-img-top" src="data:image/jpeg;base64,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" alt="">
+
+            <div class="card-body">
+                <p class="fw-bold text-muted">Lens</p>
+                <h4>Instax Lens </h4>
+                <p class="text-black-50 m-0">Blue</p>
+
+                <p><i class="fa-solid fa-star text-warning"></i> 4.3 Star from 8663 Reviews</p>
+                <h3>Rs 8000</h3>
+                <button class="mt-3 btn btn-danger float-end "><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+            </div>
+
+        </div>
+
+    </div>
+        
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        ScrollReveal().reveal('.card', {
+            delay: 450,
+            origin: 'bottom',
+            intervel: 100,
+            distance: '50px',
+            scale: 0.8
+        });
+        ScrollReveal().reveal('.title',{
+            orgin: 'right',
+            distance: '100px',
+            rotate: {
+                x:-90
+            }
+        });
+        
+        ScrollReveal().reveal('.sub-title',{
+            orgin: 'right',
+            distance: '100px',
+        })
+        
+        </script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll('.card') ,{
+                max: 15,
+                speed: 500,
+                
+            });
+        </script>
+</body>
+</html>

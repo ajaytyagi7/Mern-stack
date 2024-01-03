@@ -1,0 +1,20 @@
+.nav-item .active{
+    font-weight: bold;
+    border-bottom: 2px solid blueviolet;
+    color: blueviolet !important;
+    
+}
+.myimg3{
+    width: 40px;
+    height: 40px;
+}
+.mycard{
+    margin-left: 370px;
+    margin-top: 50px;
+    width: 700px;
+    
+    
+} 
+.mycard6{
+   margin-left: 365px;
+}
